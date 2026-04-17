@@ -910,55 +910,89 @@
   <div class="container">
     <div class="reveal">
       <div class="section-index">05 / 05</div>
-      <h2 class="section-title">AI content +<br><em>compliance</em> infrastructure</h2>
-      <div class="section-subtitle">Claude · MCP integrations · HubSpot · Multi-market · ~50% faster production</div>
+      <h2 class="section-title">AI infrastructure,<br>not <em>AI features</em></h2>
+      <div class="section-subtitle">MCP integrations · Data pipeline · Content systems · Claude · X · Instagram · LinkedIn · HubSpot</div>
     </div>
 
     <div class="reveal prose">
-      <p>Most marketing teams use AI to generate one-off outputs. I took a different approach: <strong>build reusable infrastructure</strong> that codifies how the team thinks, writes, and reviews — so every output starts from a higher baseline.</p>
-      <p>Working across regulated markets (US SEC/FINRA, Europe, Brazil CVM) means every piece of content goes through compliance review. The bottleneck isn't creativity — it's the review cycle. I rebuilt the inputs so fewer things needed to be sent back.</p>
+      <p>Most people use AI to generate one-off outputs. I build systems. There are two layers to what I've built: a <strong>data pipeline</strong> that consolidates social and CRM data into automated dashboards, and a <strong>content production system</strong> that codifies how the team writes, reviews, and ships across regulated markets.</p>
+      <p>Neither required buying a third-party tool. Both required understanding how the underlying infrastructure works — and building on top of it directly.</p>
     </div>
 
-    <div class="skill-cards reveal">
-      <div class="skill-card">
-        <div class="skill-card-icon">🧠</div>
-        <div class="skill-card-name">Brand Voice Skill</div>
-        <div class="skill-card-desc">Structured messaging architecture and writing constraints. Generates on-brand copy for any channel or market without manual style review.</div>
+    <!-- LAYER 1: DATA PIPELINE -->
+    <div class="reveal" style="margin-top: 40px;">
+      <div style="font-family: 'DM Mono', monospace; font-size: 11px; color: var(--faint); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 20px;">Layer 1 — Social + CRM data pipeline</div>
+
+      <div class="insight" style="border-left-color: var(--accent2); margin-top: 0;">
+        <div class="insight-label" style="color: var(--accent2);">What this replaces</div>
+        <p>Tools like Sprout Social, Hootsuite Analytics, or Databox charge hundreds of dollars per month for a generic version of this. I built a fully customized version — with exactly the data I want, structured the way I need it — using MCPs I built myself inside the developer consoles of each platform.</p>
       </div>
-      <div class="skill-card">
-        <div class="skill-card-icon">✅</div>
-        <div class="skill-card-name">Compliance Pipeline</div>
-        <div class="skill-card-desc">Region-aware guardrails for US, Europe, and Brazil. Flags regulatory risk before copy reaches legal review, reducing back-and-forth cycles.</div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-card-icon">📧</div>
-        <div class="skill-card-name">Subject Line Generator</div>
-        <div class="skill-card-desc">A/B-ready subject line outputs with market-specific tone differences (US advisor vs. Brazil retail). Runs directly in HubSpot via MCP integration.</div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-card-icon">🎨</div>
-        <div class="skill-card-name">Brand Guidelines Skill</div>
-        <div class="skill-card-desc">Design team's visual rules translated into structured AI instructions. Used for creative QA before assets go to compliance or publishing.</div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-card-icon">🔌</div>
-        <div class="skill-card-name">MCP / HubSpot Integration</div>
-        <div class="skill-card-desc">Connected Claude to HubSpot via MCP protocol. Skills run in context — no copy-paste between tools, no context loss between steps.</div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-card-icon">📊</div>
-        <div class="skill-card-name">HTML Email QA</div>
-        <div class="skill-card-desc">Automated quality check for HTML email renders — cross-client compatibility, dark mode, mobile layout — before anything goes to test send.</div>
+
+      <div class="findings reveal" style="margin-top: 24px;">
+        <div class="finding">
+          <div class="finding-num">1</div>
+          <div class="finding-text"><strong>Built apps inside the developer consoles</strong> of X, Instagram, LinkedIn, and HubSpot — establishing direct API access to the data I need without intermediary tools.</div>
+        </div>
+        <div class="finding">
+          <div class="finding-num">2</div>
+          <div class="finding-text"><strong>Created local MCPs</strong> for each platform that pull authenticated data on demand — engagement metrics, audience composition, reach, CRM list health — into a unified context.</div>
+        </div>
+        <div class="finding">
+          <div class="finding-num">3</div>
+          <div class="finding-text"><strong>HubSpot MCP goes beyond reporting</strong> — I use it to analyze audience lists directly, understanding which segments are receiving which communication journeys and how they're performing. Social behavior and CRM data in the same view.</div>
+        </div>
+        <div class="finding">
+          <div class="finding-num">4</div>
+          <div class="finding-text"><strong>Claude generates a consolidated HTML dashboard</strong> — customized, branded, and distributed to internal marketing channels monthly. What used to require hours of manual data pulling is now a single agent-driven workflow.</div>
+        </div>
       </div>
     </div>
 
-    <div class="insight reveal">
-      <div class="insight-label">Impact</div>
-      <p>Lifecycle build cycle time reduced by <strong>~50%</strong>. Fewer compliance review rounds. Consistent output quality across three markets and two languages — without a copywriter, a designer, or a compliance pre-checker on the team.</p>
+    <!-- LAYER 2: CONTENT SYSTEM -->
+    <div class="reveal" style="margin-top: 48px;">
+      <div style="font-family: 'DM Mono', monospace; font-size: 11px; color: var(--faint); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 20px;">Layer 2 — Content production system</div>
+
+      <div class="reveal prose">
+        <p>Working across regulated markets (US SEC/FINRA, Europe, Brazil CVM) means every piece of content goes through compliance review. The bottleneck isn't creativity — it's the review cycle. I rebuilt the inputs so fewer things needed to be sent back.</p>
+      </div>
+
+      <div class="skill-cards reveal" style="margin-top: 24px;">
+        <div class="skill-card">
+          <div class="skill-card-icon">🧠</div>
+          <div class="skill-card-name">Brand Voice Skill</div>
+          <div class="skill-card-desc">Structured messaging architecture and writing constraints. Generates on-brand copy for any channel or market without manual style review.</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon">✅</div>
+          <div class="skill-card-name">Compliance Pipeline</div>
+          <div class="skill-card-desc">Region-aware guardrails for US, Europe, and Brazil. Flags regulatory risk before copy reaches legal review, reducing back-and-forth cycles.</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon">📧</div>
+          <div class="skill-card-name">Subject Line Generator</div>
+          <div class="skill-card-desc">A/B-ready outputs with market-specific tone differences (US advisor vs. Brazil retail). Runs directly in HubSpot via MCP.</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon">🎨</div>
+          <div class="skill-card-name">Brand Guidelines Skill</div>
+          <div class="skill-card-desc">Design team's visual rules as structured AI instructions. Used for creative QA before assets go to compliance or publishing.</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon">✍️</div>
+          <div class="skill-card-name">Writer Style Skills</div>
+          <div class="skill-card-desc">Captured the editorial voice of Hashdex's Head of Insights for ghostwriting and translation — consistent voice across CIO Notes, Monthly Letters, and Outlook reports.</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon">📊</div>
+          <div class="skill-card-name">HTML Email QA</div>
+          <div class="skill-card-desc">Automated quality check for HTML email renders — cross-client compatibility, dark mode, mobile layout — before anything goes to test send.</div>
+        </div>
+      </div>
     </div>
 
-    <div class="reveal prose" style="margin-top: 32px;">
-      <p>The broader point: this is what AI-enabled marketing looks like in practice — not using a chatbot to write captions, but <strong>building systems that make the whole team faster and safer</strong>. The skills library is maintained, versioned, and extended as new markets or product lines come online.</p>
+    <div class="insight reveal" style="margin-top: 40px;">
+      <div class="insight-label">Combined impact</div>
+      <p>Lifecycle build cycle time reduced by <strong>~50%</strong>. Monthly social + CRM reporting automated end-to-end. Consistent output quality across three markets and two languages — without a copywriter, a separate analytics tool, or a compliance pre-checker on the team. <strong>This is what AI-enabled marketing looks like when you build infrastructure, not just use features.</strong></p>
     </div>
 
   </div>
